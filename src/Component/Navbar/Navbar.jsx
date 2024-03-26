@@ -18,7 +18,7 @@ const Navbar = () => {
         
         <label className='logo'><img className="" src={logo} alt="" /></label>
         <ul>
-             <li><NavLink  to='/'><a>Home</a></NavLink></li>
+             <li><NavLink  className="active" to='/'><a>Home</a></NavLink></li>
              <li><NavLink  to='/about'><a>About us</a></NavLink></li>
              <li><NavLink  to='blog'><a>Blog</a></NavLink></li>
              <li><NavLink  to='/contact'><a>Contact us</a></NavLink></li>
