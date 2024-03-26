@@ -1,0 +1,34 @@
+.navbar-start{
+    display: flex;
+    justify-content: start;  
+}
+
+nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+.navbar-end {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-end li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 20px;
+    font-size: large;
+    
+}
+
+.navbar-end li:hover{
+    color:#F72D57;    
+}
+.navbar-end li:active{
+    text-decoration: underline;    
+}
