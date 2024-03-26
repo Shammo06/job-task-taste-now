@@ -1,34 +1,60 @@
-.navbar-start{
-    display: flex;
-    justify-content: start;  
-}
-
 nav{
-    background-color: aqua;
-    display: flex;
-    justify-content: space-between;
+    height: 77px;
+    width: 100%;
+    background-color: blanchedalmond;
 }
 
-.menu{
-    visibility: hidden;
+nav ul{
+    float: right;
 }
 
-.navbar-end {
-    display: flex;
-    justify-content: end;
-}
-
-.navbar-end li{
+nav li{
     display: inline-block;
-    list-style: none;
-    padding-right: 20px;
-    font-size: large;
-    
+    padding-right: 10px;
 }
 
-.navbar-end li:hover{
-    color:#F72D57;    
+label #btn{
+    float: left;
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
 }
-.navbar-end li:active{
-    text-decoration: underline;    
+
+label #cancel{
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
+  
+}
+
+#mark {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    label #btn {
+    display: block;
+   }
+
+   nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+   }
+
+   nav li{
+    display: block;
+   }
+    
+   #mark:checked ~ ul{
+    left:0;
+   }
+   #mark:checked ~ label #btn{
+    display: none;
+   }
+   #mark:checked ~ label #cancel{
+    display: block;
+   }
 }
