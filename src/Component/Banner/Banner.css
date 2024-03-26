@@ -12,5 +12,17 @@
     width:100%;
 }
 
+@media screen and (max-width: 480px) {
+    #banner {
+        display:block;
+        width: 360px;
+        padding: 0;  
+    }
+    .image{
+        width: 360px;  
+    }
+    
+}
+
 
 
