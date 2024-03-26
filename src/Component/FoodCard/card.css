@@ -1,0 +1,84 @@
+.tab{
+    background-color: #FFFFFF;
+    color:#F72D57;
+    width: 140px;
+    height: 46px;
+    border-radius: 5px;
+    border-color: #F72D57;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.tab:hover{    
+    color: #FFFFFF;
+    background-color: #F72D57; 
+   
+}
+.tab.active{
+    color: #FFFFFF;
+    background-color: #F72D57;
+}
+
+.tab-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 10px; 
+
+}
+
+.tab:active{    
+    color: #FFFFFF;
+    background-color: #F72D57; 
+
+   
+}
+
+.card{
+    text-align: center;
+    font-family: Poppins;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.slider{
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+h2{
+    text-align: center;
+}
+.foodcard{
+    padding: 50px 100px 50px 100px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .foodcard{
+        padding: 10px;
+    }
+
+    h2{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 45px;
+        text-align: left;
+  
+      }
+
+      .tab-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px; 
+    
+    }
+    
+
+}

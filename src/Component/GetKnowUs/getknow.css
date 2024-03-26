@@ -1,20 +1,96 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Three columns */
-    grid-gap: 10px; /* Adjust spacing between grid items */
+    grid-template-columns: 1fr; 
+    grid-gap: 10px; 
+    
   }
   
-  
+  .getKnow-container{
+    padding: 100px;
+  }
   
   /* Style odd rows */
   .grid-item:nth-child(odd) {
    display: flex; 
+   gap: 140px;
   }
   
   /* Style even rows */
   .grid-item:nth-child(even) {
     display: flex;
-    flex-direction: row-reverse;
+    gap: 140px;
+    flex-direction: row-reverse;   
     
-    
+  }
+
+  h3{
+    font-family: Poppins;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+
+  }
+
+  .text-content{
+    width: 517px;
+    height: 200px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+
+
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .grid-item:nth-child(odd) {
+      display:block; 
+      
+     }
+     
+     /* Style even rows */
+     .grid-item:nth-child(even) {
+       display: block;
+              
+       
+     }
+
+    .getKnow-container{
+      padding: 10px;
+    }
+
+    .grid-item img, .text-content{
+      width: 380px;
+    }
+
+    .text-content{
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      text-align: left;
+
+    }
+
+    h3{
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: left;
+
+    }
+    h2{
+      font-family: Poppins;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 45px;
+      text-align: left;
+
+    }
+
   }

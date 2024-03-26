@@ -1,13 +1,13 @@
+/* eslint-disable react/prop-types */
+import './card.css'
 
-
-const CardItem = () => {
+const CardItem = ({ data }) => {
     return (
-        <div className='card'>
-            <p></p>
-            <img src="" alt="" />
-            <h3>Pepperoni Pizza</h3>
-            <h6>Di napoles</h6>
-            <h6>$13,99</h6>
+        <div className='card'>           
+            <img src={data.image}alt="" />
+            <h4>{data.name}</h4>
+            <h6>{data.place}</h6>
+            <h6>{data.price}</h6>
             <button>Add to cart</button>
         </div>
     );

@@ -1,0 +1,33 @@
+[
+    {
+       
+        "name": "Peperoni Pizza",
+        "place": "Di Napoli",
+        "price": "$13.99",
+        "image": "https://i.ibb.co/TRsf8t3/pizza4.png"
+      },
+      {
+        "name": "Peperoni Pizza",
+        "place": "Di Napoli",
+        "price": "$13.99",
+        "image": "https://i.ibb.co/qkMrMcg/pizza1.png"
+      },
+      {
+        "name": "Peperoni Pizza",
+        "place": "Di Napoli",
+        "price": "$13.99",
+        "image": "https://i.ibb.co/KNxJjD7/pizza3.png"
+      },
+      {
+        "name": "Peperoni Pizza",
+        "place": "Di Napoli",
+        "price": "$13.99",
+        "image": "https://i.ibb.co/TRsf8t3/pizza2.png"
+      },
+      {
+        "name": "Peperoni Pizza",
+        "place": "Di Napoli",
+        "price": "$13.99",
+        "image": "https://i.ibb.co/TRsf8t3/pizza4.png"
+      }
+]

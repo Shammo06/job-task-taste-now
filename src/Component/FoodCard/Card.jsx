@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {Swiper, SwiperSlide} from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,7 +10,7 @@ import  { FreeMode, Autoplay, Pagination} from "swiper/modules";
 import CardItem from "./CardItem";
 
 
-const Card = () => {
+const Card = ({ data }) => {
     const renderBullet = (index, className) => {
         if (index === 0) {
           return '<span class="' + className + '"> &lt; </span>';
@@ -19,9 +20,7 @@ const Card = () => {
           return '<span class="' + className + '"> . </span>';
         } else if (index === 3) {
           return '<span class="' + className + '"> . </span>';
-        } else if (index === 4) {
-          return '<span class="' + className + '"> . </span>';
-        } else if (index === 5) {
+        }else if (index === 4) {
           return '<span class="' + className + '"> &gt; </span>';
         }
       };
@@ -58,29 +57,14 @@ const Card = () => {
                 },
             }}
         >
-                <SwiperSlide>
-                     <CardItem></CardItem>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <CardItem></CardItem>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <CardItem></CardItem>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <CardItem></CardItem>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <CardItem></CardItem>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <CardItem></CardItem>
-                </SwiperSlide>
+                {
+                  data.map(item => (
+                    <SwiperSlide className='slider active' key={item.id}>
+                      <CardItem data={item} />
+                    </SwiperSlide>
+                  ))
+                }
+                
 
        
             </Swiper>
