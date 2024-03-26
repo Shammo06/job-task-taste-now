@@ -10,7 +10,7 @@ const FoodCard = () => {
         <div>
             <div className="foodcard">
                 <h2>Our Popular <span>Categories</span></h2>
-            <Tabs defaultIndex={0}>
+            <Tabs >
               <TabList className='tab-list'>
                 <Tab className='tab'>Pizzas</Tab>
                 <Tab className='tab'>Burgers</Tab>

@@ -13,15 +13,15 @@ import CardItem from "./CardItem";
 const Card = ({ data }) => {
     const renderBullet = (index, className) => {
         if (index === 0) {
-          return '<span class="' + className + '"> &lt; </span>';
+          return '<span class="' + className + '">   &lt; </span>';
         } else if (index === 1) {
-          return '<span class="' + className + '"> . </span>';
+          return '<span class="' + className + '">  .  </span>';
         } else if (index === 2) {
-          return '<span class="' + className + '"> . </span>';
+          return '<span class="' + className + '">  .  </span>';
         } else if (index === 3) {
-          return '<span class="' + className + '"> . </span>';
+          return '<span class="' + className + '" >  .  </span>';
         }else if (index === 4) {
-          return '<span class="' + className + '"> &gt; </span>';
+          return '<span class="' + className + '"  > &gt; </span>';
         }
       };
     return (
